@@ -14,28 +14,27 @@ void Statistics::writeLine(std::ofstream& file, const std::string& line) {
     }
 }
 
-// Обрезка длинных путей
 static std::string shortenPath(const std::string& path, size_t maxLen = 90) {
     if (path.length() <= maxLen) return path;
     return "..." + path.substr(path.length() - maxLen + 3);
 }
 
-// Разделитель
 static std::string separator(char c = '=', int len = 70) {
     return std::string(len, c);
 }
 
 void Statistics::generateReport(const std::vector<FileRecord>& records, const std::string& outputPath) {
     std::ofstream out(outputPath, std::ios::binary | std::ios::trunc);
-    unsigned char bom[] = {0xEF, 0xBB, 0xBF};
-    out.write((char*)bom, sizeof(bom));
+    // BOM removed — pure ASCII/UTF-8 without BOM for better compatibility
+    // unsigned char bom[] = {0xEF, 0xBB, 0xBF};
+    // out.write((char*)bom, sizeof(bom));
 
     writeLine(out, "");
     writeLine(out, separator('=', 70));
-    writeLine(out, "     ОТЧЁТ ПО ИНДЕКСУ WINDOWS 11");
+    writeLine(out, "     WINDOWS 11 SEARCH INDEX REPORT");
     writeLine(out, separator('=', 70));
     writeLine(out, "");
-    writeLine(out, "  Всего записей в индексе: " + std::to_string(records.size()));
+    writeLine(out, "  Total entries in index: " + std::to_string(records.size()));
     writeLine(out, "");
 
     calculateTimeline(out, records);
@@ -43,17 +42,17 @@ void Statistics::generateReport(const std::vector<FileRecord>& records, const st
     calculateFileTypeStats(out, records);
 
     writeLine(out, separator('=', 70));
-    writeLine(out, "  Отчёт сгенерирован успешно.");
+    writeLine(out, "  Report generated successfully.");
     writeLine(out, separator('=', 70));
 
     out.close();
-    std::cout << "\n[ГОТОВО] Отчет сохранен в " << outputPath << std::endl;
+    std::cout << "\n[OK] Report saved to " << outputPath << std::endl;
 }
 
 void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
-    writeLine(out, "  1. ВРЕМЕННАЯ ШКАЛА АКТИВНОСТИ");
-    writeLine(out, "     (последние изменённые файлы)");
+    writeLine(out, "  1. ACTIVITY TIMELINE");
+    writeLine(out, "     (recently modified files)");
     writeLine(out, separator('-', 70));
     writeLine(out, "");
 
@@ -66,7 +65,7 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
         return a.lastModified > b.lastModified;
     });
 
-    writeLine(out, "  Последние 20 изменённых файлов:");
+    writeLine(out, "  Last 20 modified files:");
     writeLine(out, "");
 
     int count = 0;
@@ -75,8 +74,8 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
         std::stringstream ss;
         ss << "  " << std::setw(2) << count << ". ";
         ss << "[" << rec.lastModified << "] ";
-        
-        // Размер, если известен
+
+        // File size if known
         if (rec.fileSize >= 0) {
             double size = rec.fileSize;
             std::string unit = " B";
@@ -87,7 +86,7 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
             sz << std::fixed << std::setprecision(1) << size << unit;
             ss << "(" << std::setw(10) << sz.str() << ") ";
         }
-        
+
         ss << "\n     " << shortenPath(rec.fullPath, 65);
         writeLine(out, ss.str());
         writeLine(out, "");
@@ -97,8 +96,8 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
 
 void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
-    writeLine(out, "  2. ПОИСК ДУБЛИКАТОВ ФАЙЛОВ");
-    writeLine(out, "     (по совпадению имени)");
+    writeLine(out, "  2. DUPLICATE FILES");
+    writeLine(out, "     (by file name)");
     writeLine(out, separator('-', 70));
     writeLine(out, "");
 
@@ -114,29 +113,29 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
     for (const auto& [name, paths] : nameMap) {
         if (paths.size() > 1) {
             totalDups++;
-            if (dupFound >= 30) continue; // Ограничим для читаемости
-            
+            if (dupFound >= 30) continue;
+
             dupFound++;
-            writeLine(out, "  [" + std::to_string(dupFound) + "] \"" + name + "\" — найдено " + 
-                      std::to_string(paths.size()) + " копий:");
+            writeLine(out, "  [" + std::to_string(dupFound) + "] \"" + name + "\" — " +
+                      std::to_string(paths.size()) + " copies found:");
             for (size_t i = 0; i < paths.size() && i < 5; i++) {
                 std::stringstream ss;
                 ss << "      " << (i + 1) << ". " << shortenPath(paths[i], 62);
                 writeLine(out, ss.str());
             }
             if (paths.size() > 5) {
-                writeLine(out, "      ... и ещё " + std::to_string(paths.size() - 5) + " копий");
+                writeLine(out, "      ... and " + std::to_string(paths.size() - 5) + " more");
             }
             writeLine(out, "");
         }
     }
 
     if (totalDups == 0) {
-        writeLine(out, "  Дубликаты не найдены.");
+        writeLine(out, "  No duplicates found.");
     } else {
-        writeLine(out, "  Всего найдено групп дубликатов: " + std::to_string(totalDups));
+        writeLine(out, "  Total duplicate groups: " + std::to_string(totalDups));
         if (totalDups > 30) {
-            writeLine(out, "  (показаны первые 30)");
+            writeLine(out, "  (first 30 shown)");
         }
     }
     writeLine(out, "");
@@ -144,47 +143,44 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
 
 void Statistics::calculateFileTypeStats(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
-    writeLine(out, "  3. СТАТИСТИКА ПО ТИПАМ ФАЙЛОВ");
+    writeLine(out, "  3. FILE TYPE STATISTICS");
     writeLine(out, separator('-', 70));
     writeLine(out, "");
 
     std::map<std::string, int> typeCount;
     int noExtCount = 0;
-    int folderCount = 0;
 
     for (const auto& rec : records) {
         if (rec.fileType == "no_ext" || rec.fileType.empty()) {
             noExtCount++;
         } else {
-            // Приводим к нижнему регистру для объединения .JPG и .jpg
             std::string lower = rec.fileType;
             std::transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
             typeCount[lower]++;
         }
     }
 
-    // Топ-20 расширений
     std::vector<std::pair<std::string, int>> sortedTypes(typeCount.begin(), typeCount.end());
     std::sort(sortedTypes.begin(), sortedTypes.end(), [](auto& a, auto& b) {
         if (a.second != b.second) return a.second > b.second;
         return a.first < b.first;
     });
 
-    writeLine(out, "  Топ расширений по количеству файлов:");
+    writeLine(out, "  Top file extensions by count:");
     writeLine(out, "");
     writeLine(out, "  +----------------------+------------+----------+");
-    writeLine(out, "  | Расширение           | Количество |    Доля  |");
+    writeLine(out, "  | Extension            |    Count   |   Share  |");
     writeLine(out, "  +----------------------+------------+----------+");
 
     int shown = 0;
     int totalWithExt = records.size() - noExtCount;
-    
+
     for (const auto& [ext, count] : sortedTypes) {
         if (shown >= 25) break;
         double pct = totalWithExt > 0 ? (100.0 * count / totalWithExt) : 0;
         std::stringstream ss;
-        ss << "  | ." << std::setw(20) << std::left << ext 
-           << " | " << std::setw(10) << count 
+        ss << "  | ." << std::setw(20) << std::left << ext
+           << " | " << std::setw(10) << count
            << " | " << std::setw(7) << std::fixed << std::setprecision(1) << pct << "% |";
         writeLine(out, ss.str());
         shown++;
@@ -192,15 +188,15 @@ void Statistics::calculateFileTypeStats(std::ofstream& out, const std::vector<Fi
 
     writeLine(out, "  +----------------------+------------+----------+");
     writeLine(out, "");
-    
+
     if (noExtCount > 0) {
         double pct = 100.0 * noExtCount / records.size();
         std::stringstream ss;
-        ss << "  Без расширения: " << noExtCount << " (" << std::fixed << std::setprecision(1) << pct << "%)";
+        ss << "  Without extension: " << noExtCount << " (" << std::fixed << std::setprecision(1) << pct << "%)";
         writeLine(out, ss.str());
     }
 
     writeLine(out, "");
-    writeLine(out, "  Всего уникальных расширений: " + std::to_string(typeCount.size()));
+    writeLine(out, "  Total unique extensions: " + std::to_string(typeCount.size()));
     writeLine(out, "");
 }
