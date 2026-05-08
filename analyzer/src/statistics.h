@@ -18,7 +18,7 @@ private:
     void calculateTimeline(std::ofstream& out, const std::vector<FileRecord>& records);
     // раздел 2: поиск дубликатов по имени файла
     void findDuplicates(std::ofstream& out, const std::vector<FileRecord>& records);
-    // раздел 3: статистика по расширениям файлов
+    // раздел 3 статистика по расширениям файлов
     void calculateFileTypeStats(std::ofstream& out, const std::vector<FileRecord>& records);
 };
 

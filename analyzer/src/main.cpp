@@ -25,8 +25,10 @@ void cleanupTempFiles() {
 }
 
 // определяет какой из двух файлов это gather база по наличию таблицы SystemIndex_Gthr
+// проверяет оба файла а не только первый
 std::string detectGatherDb(const std::string& path1, const std::string& path2) {
     sqlite3* db;
+    // проверяем первый файл
     if (sqlite3_open_v2(path1.c_str(), &db, SQLITE_OPEN_READONLY, NULL) == SQLITE_OK) {
         sqlite3_stmt* stmt;
         if (sqlite3_prepare_v2(db, 
@@ -35,27 +37,46 @@ std::string detectGatherDb(const std::string& path1, const std::string& path2) {
             if (sqlite3_step(stmt) == SQLITE_ROW) {
                 sqlite3_finalize(stmt);
                 sqlite3_close(db);
-                return path1; // первый файл содержит нужную таблицу
+                return path1;
             }
             sqlite3_finalize(stmt);
         }
         sqlite3_close(db);
     }
-    return path2; // иначе gather это второй файл
+    // проверяем второй файл
+    if (sqlite3_open_v2(path2.c_str(), &db, SQLITE_OPEN_READONLY, NULL) == SQLITE_OK) {
+        sqlite3_stmt* stmt;
+        if (sqlite3_prepare_v2(db, 
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='SystemIndex_Gthr'", 
+            -1, &stmt, 0) == SQLITE_OK) {
+            if (sqlite3_step(stmt) == SQLITE_ROW) {
+                sqlite3_finalize(stmt);
+                sqlite3_close(db);
+                return path2;
+            }
+            sqlite3_finalize(stmt);
+        }
+        sqlite3_close(db);
+    }
+    return path1; // если ни один не подошел возвращаем первый
 }
 
 // ищет все .db файлы в папке data кроме временных shm и wal
 std::vector<std::string> findDbFiles() {
     std::vector<std::string> dbFiles;
-    if (fs::exists("data/")) {
-        for (const auto& entry : fs::directory_iterator("data/")) {
-            std::string path = entry.path().string();
-            if (path.find(".db") != std::string::npos && 
-                path.find("-shm") == std::string::npos && 
-                path.find("-wal") == std::string::npos) {
-                dbFiles.push_back(path);
+    try {
+        for (const auto& entry : fs::directory_iterator("data")) {
+            if (entry.is_regular_file()) {
+                std::string path = entry.path().string();
+                if (path.find(".db") != std::string::npos && 
+                    path.find("-shm") == std::string::npos && 
+                    path.find("-wal") == std::string::npos) {
+                    dbFiles.push_back(path);
+                }
             }
         }
+    } catch (...) {
+        std::cerr << "[!] Error reading data/ folder" << std::endl;
     }
     return dbFiles;
 }
@@ -71,7 +92,7 @@ int main(int argc, char* argv[]) {
     if (argc >= 3) windowsDbPath = argv[2];
     if (argc >= 4) outputFile = argv[3];
 
-    // проверяем существуют ли файлы по указанным путям
+    // проверяем существуют ли стандартные файлы
     bool standardFound = false;
     if (argc < 2) {
         std::ifstream gTest(gatherDbPath);
@@ -79,22 +100,23 @@ int main(int argc, char* argv[]) {
         standardFound = gTest.good() && wTest.good();
     }
 
-    // если пути не переданы и стандартные файлы не найдены ищем любые db
+    // если стандартные не найдены ищем любые db в data
     if (argc < 2 && !standardFound) {
         std::vector<std::string> dbFiles = findDbFiles();
+        std::cout << "[*] Found " << dbFiles.size() << " .db files in data/" << std::endl;
 
         if (dbFiles.size() >= 2) {
-            // автоматически определяем где gather а где windows
+            // определяем где gather а где windows по содержимому
             gatherDbPath = detectGatherDb(dbFiles[0], dbFiles[1]);
             windowsDbPath = (gatherDbPath == dbFiles[0]) ? dbFiles[1] : dbFiles[0];
-            std::cout << "[*] Auto-detected databases:" << std::endl;
+            std::cout << "[*] Auto-detected:" << std::endl;
             std::cout << "    Gather:  " << gatherDbPath << std::endl;
             std::cout << "    Windows: " << windowsDbPath << std::endl;
             std::cout << std::endl;
         } else {
             std::cout << "[!] Need 2 database files in data/ folder." << std::endl;
             std::cout << "Found: " << dbFiles.size() << std::endl;
-            std::cout << "Expected: Windows-gather.db and Windows.db" << std::endl;
+            std::cout << "Place Windows-gather.db and Windows.db in data/" << std::endl;
             std::cout << "Or run: program.exe <gather_db> <windows_db>" << std::endl;
             std::cout << "Press Enter to exit..." << std::endl;
             std::cin.get();
