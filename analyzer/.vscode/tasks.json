@@ -4,11 +4,10 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "C:\\msys64\\usr\\bin\\bash.exe",
-            "args": [
-                "-c",
-                "export PATH=\"/c/msys64/ucrt64/bin:/c/msys64/usr/bin:$PATH\" && make"
-            ],
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
