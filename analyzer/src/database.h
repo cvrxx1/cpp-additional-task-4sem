@@ -5,20 +5,20 @@
 #include <vector>
 #include <map>
 
-// Forward declaration
+// предварительное объявление вместо включения sqlite3.h
 struct sqlite3;
 
-// Структура для хранения полной информации о файле
+// хранит всю информацию об одном проиндексированном файле
 struct FileRecord {
     int documentId;
     std::string fileName;
-    std::string fullPath;       // Полный восстановленный путь
-    std::string lastModified;   // Из Windows.db -> System.DateModified
-    std::string fileType;       // Расширение файла
-    long long fileSize;         // Размер из Windows.db -> System.Size
+    std::string fullPath;       // полный путь, восстановленный из SystemIndex_GthrPth
+    std::string lastModified;   // дата изменения из Windows.db
+    std::string fileType;       // расширение файла в нижнем регистре
+    long long fileSize;         // размер файла из Windows.db
 };
 
-// Вспомогательная структура для построения дерева папок
+// узел в дереве папок для восстановления путей
 struct PathNode {
     int scopeId;
     int parentId;
@@ -27,13 +27,17 @@ struct PathNode {
 
 class DatabaseManager {
 public:
+    // основная функция извлечения данных из двух баз
     bool extractData(const std::string& gatherDbPath, 
                      const std::string& windowsDbPath, 
                      std::vector<FileRecord>& records);
 
 private:
+    // загружает иерархию папок из SystemIndex_GthrPth
     std::map<int, PathNode> loadPathMap(sqlite3* db);
+    // рекурсивно строит полный путь по scopeId
     std::string buildFullPath(int scopeId, const std::map<int, PathNode>& pathMap, int depth = 0);
+    // загружает метаданные (размер, дату) из Windows.db
     void loadMetadata(const std::string& windowsDbPath, std::vector<FileRecord>& records);
 };
 

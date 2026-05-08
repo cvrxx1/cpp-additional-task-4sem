@@ -9,6 +9,7 @@
 
 namespace fs = std::filesystem;
 
+// удаляет временные файлы sqlite которые остаются после открытия баз
 void cleanupTempFiles() {
     const char* tempFiles[] = {
         "data/Windows-gather.db-shm",
@@ -23,7 +24,7 @@ void cleanupTempFiles() {
     }
 }
 
-// Определяет, какой из двух файлов — Windows-gather.db (по наличию таблицы SystemIndex_Gthr)
+// определяет какой из двух файлов это gather база по наличию таблицы SystemIndex_Gthr
 std::string detectGatherDb(const std::string& path1, const std::string& path2) {
     sqlite3* db;
     if (sqlite3_open_v2(path1.c_str(), &db, SQLITE_OPEN_READONLY, NULL) == SQLITE_OK) {
@@ -34,42 +35,56 @@ std::string detectGatherDb(const std::string& path1, const std::string& path2) {
             if (sqlite3_step(stmt) == SQLITE_ROW) {
                 sqlite3_finalize(stmt);
                 sqlite3_close(db);
-                return path1;
+                return path1; // первый файл содержит нужную таблицу
             }
             sqlite3_finalize(stmt);
         }
         sqlite3_close(db);
     }
-    return path2;
+    return path2; // иначе gather это второй файл
+}
+
+// ищет все .db файлы в папке data кроме временных shm и wal
+std::vector<std::string> findDbFiles() {
+    std::vector<std::string> dbFiles;
+    if (fs::exists("data/")) {
+        for (const auto& entry : fs::directory_iterator("data/")) {
+            std::string path = entry.path().string();
+            if (path.find(".db") != std::string::npos && 
+                path.find("-shm") == std::string::npos && 
+                path.find("-wal") == std::string::npos) {
+                dbFiles.push_back(path);
+            }
+        }
+    }
+    return dbFiles;
 }
 
 int main(int argc, char* argv[]) {
+    // пути по умолчанию для двойного клика
     std::string gatherDbPath = "data/Windows-gather.db";
     std::string windowsDbPath = "data/Windows.db";
     std::string outputFile = "output/report.txt";
 
+    // можно передать свои пути через командную строку
     if (argc >= 2) gatherDbPath = argv[1];
     if (argc >= 3) windowsDbPath = argv[2];
     if (argc >= 4) outputFile = argv[3];
 
-    // Проверяем стандартные имена
-    std::ifstream gTest(gatherDbPath);
-    std::ifstream wTest(windowsDbPath);
-    
-    if ((!gTest || !wTest) && argc < 2) {
-        // Стандартные не найдены — ищем любые .db в data/
-        std::vector<std::string> dbFiles;
-        if (fs::exists("data/")) {
-            for (const auto& entry : fs::directory_iterator("data/")) {
-                std::string path = entry.path().string();
-                if (path.find(".db") != std::string::npos && 
-                    path.find("-shm") == std::string::npos && 
-                    path.find("-wal") == std::string::npos) {
-                }
-            }
-        }
+    // проверяем существуют ли файлы по указанным путям
+    bool standardFound = false;
+    if (argc < 2) {
+        std::ifstream gTest(gatherDbPath);
+        std::ifstream wTest(windowsDbPath);
+        standardFound = gTest.good() && wTest.good();
+    }
+
+    // если пути не переданы и стандартные файлы не найдены ищем любые db
+    if (argc < 2 && !standardFound) {
+        std::vector<std::string> dbFiles = findDbFiles();
 
         if (dbFiles.size() >= 2) {
+            // автоматически определяем где gather а где windows
             gatherDbPath = detectGatherDb(dbFiles[0], dbFiles[1]);
             windowsDbPath = (gatherDbPath == dbFiles[0]) ? dbFiles[1] : dbFiles[0];
             std::cout << "[*] Auto-detected databases:" << std::endl;
@@ -80,13 +95,12 @@ int main(int argc, char* argv[]) {
             std::cout << "[!] Need 2 database files in data/ folder." << std::endl;
             std::cout << "Found: " << dbFiles.size() << std::endl;
             std::cout << "Expected: Windows-gather.db and Windows.db" << std::endl;
+            std::cout << "Or run: program.exe <gather_db> <windows_db>" << std::endl;
             std::cout << "Press Enter to exit..." << std::endl;
             std::cin.get();
             return 1;
         }
     }
-    gTest.close();
-    wTest.close();
 
     std::cout << "===== WINDOWS 11 INDEX ANALYZER =====" << std::endl;
     std::cout << "Gather DB: " << gatherDbPath << std::endl;

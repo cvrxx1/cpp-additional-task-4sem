@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <iostream>
 
+// выводит строку и в консоль и в файл одновременно
 void Statistics::writeLine(std::ofstream& file, const std::string& line) {
     std::cout << line << std::endl;
     if (file.is_open()) {
@@ -14,20 +15,20 @@ void Statistics::writeLine(std::ofstream& file, const std::string& line) {
     }
 }
 
+// обрезает длинные пути для читаемости отчета
 static std::string shortenPath(const std::string& path, size_t maxLen = 90) {
     if (path.length() <= maxLen) return path;
     return "..." + path.substr(path.length() - maxLen + 3);
 }
 
+// разделитель для красивого форматирования
 static std::string separator(char c = '=', int len = 70) {
     return std::string(len, c);
 }
 
+// главная функция генерации всего отчета
 void Statistics::generateReport(const std::vector<FileRecord>& records, const std::string& outputPath) {
     std::ofstream out(outputPath, std::ios::binary | std::ios::trunc);
-    // BOM removed — pure ASCII/UTF-8 without BOM for better compatibility
-    // unsigned char bom[] = {0xEF, 0xBB, 0xBF};
-    // out.write((char*)bom, sizeof(bom));
 
     writeLine(out, "");
     writeLine(out, separator('=', 70));
@@ -49,6 +50,7 @@ void Statistics::generateReport(const std::vector<FileRecord>& records, const st
     std::cout << "\n[OK] Report saved to " << outputPath << std::endl;
 }
 
+// раздел с временной шкалой последних изменений
 void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
     writeLine(out, "  1. ACTIVITY TIMELINE");
@@ -56,11 +58,13 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
     writeLine(out, separator('-', 70));
     writeLine(out, "");
 
+    // копируем только записи у которых есть дата изменения
     std::vector<FileRecord> sortedRecords = records;
     sortedRecords.erase(std::remove_if(sortedRecords.begin(), sortedRecords.end(), [](const FileRecord& r) {
         return r.lastModified == "N/A" || r.lastModified.empty();
     }), sortedRecords.end());
 
+    // сортируем по дате сначала новые
     std::sort(sortedRecords.begin(), sortedRecords.end(), [](const FileRecord& a, const FileRecord& b) {
         return a.lastModified > b.lastModified;
     });
@@ -75,7 +79,7 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
         ss << "  " << std::setw(2) << count << ". ";
         ss << "[" << rec.lastModified << "] ";
 
-        // File size if known
+        // показываем размер файла если он известен
         if (rec.fileSize >= 0) {
             double size = rec.fileSize;
             std::string unit = " B";
@@ -94,6 +98,7 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
     writeLine(out, "");
 }
 
+// раздел поиска дубликатов по имени файла
 void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
     writeLine(out, "  2. DUPLICATE FILES");
@@ -101,6 +106,7 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
     writeLine(out, separator('-', 70));
     writeLine(out, "");
 
+    // группируем файлы по имени
     std::map<std::string, std::vector<std::string>> nameMap;
     for (const auto& rec : records) {
         if (rec.fileName.length() > 3) {
@@ -113,11 +119,12 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
     for (const auto& [name, paths] : nameMap) {
         if (paths.size() > 1) {
             totalDups++;
-            if (dupFound >= 30) continue;
+            if (dupFound >= 30) continue; // показываем только первые 30 групп
 
             dupFound++;
             writeLine(out, "  [" + std::to_string(dupFound) + "] \"" + name + "\" — " +
                       std::to_string(paths.size()) + " copies found:");
+            // выводим первые 5 копий
             for (size_t i = 0; i < paths.size() && i < 5; i++) {
                 std::stringstream ss;
                 ss << "      " << (i + 1) << ". " << shortenPath(paths[i], 62);
@@ -141,6 +148,7 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
     writeLine(out, "");
 }
 
+// раздел статистики по типам файлов
 void Statistics::calculateFileTypeStats(std::ofstream& out, const std::vector<FileRecord>& records) {
     writeLine(out, separator('-', 70));
     writeLine(out, "  3. FILE TYPE STATISTICS");
@@ -150,16 +158,19 @@ void Statistics::calculateFileTypeStats(std::ofstream& out, const std::vector<Fi
     std::map<std::string, int> typeCount;
     int noExtCount = 0;
 
+    // подсчитываем количество каждого расширения
     for (const auto& rec : records) {
         if (rec.fileType == "no_ext" || rec.fileType.empty()) {
             noExtCount++;
         } else {
+            // приводим к нижнему регистру чтобы объединить jpg и JPG
             std::string lower = rec.fileType;
             std::transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
             typeCount[lower]++;
         }
     }
 
+    // сортируем по убыванию количества
     std::vector<std::pair<std::string, int>> sortedTypes(typeCount.begin(), typeCount.end());
     std::sort(sortedTypes.begin(), sortedTypes.end(), [](auto& a, auto& b) {
         if (a.second != b.second) return a.second > b.second;
@@ -176,7 +187,7 @@ void Statistics::calculateFileTypeStats(std::ofstream& out, const std::vector<Fi
     int totalWithExt = records.size() - noExtCount;
 
     for (const auto& [ext, count] : sortedTypes) {
-        if (shown >= 25) break;
+        if (shown >= 25) break; // только топ 25
         double pct = totalWithExt > 0 ? (100.0 * count / totalWithExt) : 0;
         std::stringstream ss;
         ss << "  | ." << std::setw(20) << std::left << ext
