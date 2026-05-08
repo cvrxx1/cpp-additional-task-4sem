@@ -103,18 +103,18 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
                                  const std::string& windowsDbPath,
                                  std::vector<FileRecord>& records) {
     sqlite3* db;
-    std::cout << "[*] Открываем " << gatherDbPath << "..." << std::endl;
+    std::cout << "[*] Opening " << gatherDbPath << "..." << std::endl;
     if (sqlite3_open_v2(gatherDbPath.c_str(), &db, SQLITE_OPEN_READONLY, NULL) != SQLITE_OK) {
-        std::cerr << "[!] Ошибка открытия: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "[!] Error opening gather DB: " << sqlite3_errmsg(db) << std::endl;
         return false;
     }
     sqlite3_create_collation(db, "UNICODE_en-US_LINGUISTIC_IGNORECASE", SQLITE_UTF8, NULL, collationStub);
 
-    std::cout << "[*] Загружаем иерархию папок..." << std::endl;
+    std::cout << "[*] Loading folder hierarchy..." << std::endl;
     auto pathMap = loadPathMap(db);
-    std::cout << "[+] Узлов путей: " << pathMap.size() << std::endl;
+    std::cout << "[+] Path nodes loaded: " << pathMap.size() << std::endl;
 
-    std::cout << "[*] Извлекаем файлы..." << std::endl;
+    std::cout << "[*] Extracting files..." << std::endl;
     const char* query = "SELECT DocumentID, FileName, ScopeID FROM SystemIndex_Gthr;";
     sqlite3_stmt* stmt;
     int rc = sqlite3_prepare_v2(db, query, -1, &stmt, 0);
@@ -131,12 +131,10 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
         const unsigned char* nameText = sqlite3_column_text(stmt, 1);
         rec.fileName = nameText ? reinterpret_cast<const char*>(nameText) : "?";
 
-        // Правильное извлечение расширения: только если точка есть и это не первый/последний символ
         std::string fname = rec.fileName;
         size_t dot = fname.find_last_of('.');
         if (dot != std::string::npos && dot > 0 && dot < fname.length() - 1) {
             rec.fileType = fname.substr(dot + 1);
-            // Отсекаем явно «битые» расширения длиннее 10 символов
             if (rec.fileType.length() > 10) rec.fileType = "no_ext";
         } else {
             rec.fileType = "no_ext";
@@ -156,15 +154,14 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
     sqlite3_finalize(stmt);
     sqlite3_close(db);
 
-    std::cout << "[+] Извлечено записей из gather: " << count << std::endl;
+    std::cout << "[+] Records extracted from gather: " << count << std::endl;
 
-    // Загружаем метаданные из Windows.db
-    std::cout << "[*] Загружаем метаданные из " << windowsDbPath << "..." << std::endl;
+    std::cout << "[*] Loading metadata from " << windowsDbPath << "..." << std::endl;
     loadMetadata(windowsDbPath, records);
 
     int withMeta = 0;
     for (const auto& r : records) if (r.lastModified != "N/A") withMeta++;
-    std::cout << "[+] Записей с метаданными: " << withMeta << "/" << records.size() << std::endl;
+    std::cout << "[+] Records with metadata: " << withMeta << "/" << records.size() << std::endl;
 
     return count > 0;
 }
