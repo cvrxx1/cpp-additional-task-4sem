@@ -7,8 +7,6 @@ data/*.db
 data/*.db-shm
 data/*.db-wal
 
-# Результаты работы
-output/*.txt
 
 # Настройки IDE
 .vscode/settings.json
