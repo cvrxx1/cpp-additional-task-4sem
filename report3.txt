@@ -1,0 +1,296 @@
+
+======================================================================
+     WINDOWS 11 SEARCH INDEX REPORT
+======================================================================
+
+  Total entries in index: 14898
+
+----------------------------------------------------------------------
+  1. ACTIVITY TIMELINE
+     (recently modified files)
+----------------------------------------------------------------------
+
+  Last 20 modified files:
+
+   1. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...appp/\node_modules/\@popperjs/\core/\lib/\modifiers/\hide.d.ts
+
+   2. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...nts/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\index.d.ts
+
+   3. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...s/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\onError.d.ts
+
+   4. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...s/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\request.d.ts
+
+   5. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     .../\posts-app/\node_modules/\@tinyhttp/\app/\dist/\response.d.ts
+
+   6. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...nts/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\types.d.ts
+
+   7. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ents/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\view.d.ts
+
+   8. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ppp/\node_modules/\@popperjs/\core/\lib/\modifiers/\index.d.ts
+
+   9. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...node_modules/\@tinyhttp/\content-disposition/\dist/\index.d.ts
+
+  10. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ts/\posts-app/\node_modules/\@tinyhttp/\app/\dist/\extend.d.ts
+
+  11. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...s-app/\node_modules/\@tinyhttp/\content-type/\dist/\index.d.ts
+
+  12. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...appp/\node_modules/\@popperjs/\core/\lib/\modifiers/\flip.d.ts
+
+  13. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     .../\posts-app/\node_modules/\@tinyhttp/\cookie/\dist/\index.d.ts
+
+  14. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ..._modules/\@popperjs/\core/\lib/\modifiers/\eventListeners.d.ts
+
+  15. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...p/\node_modules/\@tinyhttp/\cookie-signature/\dist/\index.d.ts
+
+  16. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...e_modules/\@popperjs/\core/\lib/\modifiers/\computeStyles.d.ts
+
+  17. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ts/\posts-app/\node_modules/\@tinyhttp/\cors/\dist/\index.d.ts
+
+  18. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ppp/\node_modules/\@popperjs/\core/\lib/\modifiers/\arrow.d.ts
+
+  19. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     .../\bootstrappp/\node_modules/\@popperjs/\core/\lib/\popper.d.ts
+
+  20. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...ppp/\node_modules/\@popperjs/\core/\lib/\utils/\getAltLen.d.ts
+
+
+----------------------------------------------------------------------
+  2. DUPLICATE FILES
+     (by file name)
+----------------------------------------------------------------------
+
+  [1] ".NETFramework,Version=v4.7.2.AssemblyAttributes.cs" — 11 copies found:
+      1. .../\Debug/\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+      2. .../\Debug/\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+      3. .../\Debug/\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+      4. .../\Debug/\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+      5. .../\Debug/\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+      ... and 6 more
+
+  [2] ".bin" — 13 copies found:
+      1. ...c1]/\Users/\maksg/\Documents/\portfolio/\node_modules/\.bin
+      2. ...Users/\maksg/\Documents/\bootstrap-main/\node_modules/\.bin
+      3. ...ers/\maksg/\Documents/\network-dom-main/\node_modules/\.bin
+      4. ...c1]/\Users/\maksg/\Documents/\posts-app/\node_modules/\.bin
+      5. ...bootstrap-main/\node_modules/\bin-build/\node_modules/\.bin
+      ... and 8 more
+
+  [3] ".editorconfig" — 10 copies found:
+      1. ...ments/\network-dom-main/\node_modules/\dayjs/\.editorconfig
+      2. ...g/\Documents/\posts-app/\node_modules/\dayjs/\.editorconfig
+      3. ...s/\bootstrap-main/\node_modules/\is-callable/\.editorconfig
+      4. ...ents/\bootstrap-main/\node_modules/\for-each/\.editorconfig
+      5. ...tstrap-main/\node_modules/\which-typed-array/\.editorconfig
+      ... and 5 more
+
+  [4] ".eslintignore" — 4 copies found:
+      1. ...nts/\bootstrap-main/\node_modules/\call-bind/\.eslintignore
+      2. ...rap-main/\node_modules/\has-symbol-support-x/\.eslintignore
+      3. ...nts/\bootstrap-main/\node_modules/\is-object/\.eslintignore
+      4. ...trap-main/\node_modules/\has-to-string-tag-x/\.eslintignore
+
+  [5] ".eslintrc" — 31 copies found:
+      1. ...n/\node_modules/\supports-preserve-symlinks-flag/\.eslintrc
+      2. ...ts/\bootstrap-main/\node_modules/\is-core-module/\.eslintrc
+      3. ...ootstrap-main/\node_modules/\function-bind/\test/\.eslintrc
+      4. ...rap-main/\node_modules/\has-property-descriptors/\.eslintrc
+      5. ...otstrap-main/\node_modules/\define-data-property/\.eslintrc
+      ... and 26 more
+
+  [6] ".eslintrc.json" — 2 copies found:
+      1. ...ap-main/\node_modules/\has-symbol-support-x/\.eslintrc.json
+      2. ...rap-main/\node_modules/\has-to-string-tag-x/\.eslintrc.json
+
+  [7] ".github" — 32 copies found:
+      1. ...ents/\bootstrap-main/\node_modules/\balanced-match/\.github
+      2. ...ksg/\Documents/\bootstrap-main/\node_modules/\pump/\.github
+      3. ...Documents/\bootstrap-main/\node_modules/\to-buffer/\.github
+      4. ...strap-main/\node_modules/\has-property-descriptors/\.github
+      5. .../\Documents/\bootstrap-main/\node_modules/\reusify/\.github
+      ... and 27 more
+
+  [8] ".gitignore" — 2 copies found:
+      1. ...5478ce64c1]/\Users/\maksg/\Documents/\portfolio/\.gitignore
+      2. ...5478ce64c1]/\Users/\maksg/\Documents/\posts-app/\.gitignore
+
+  [9] ".jshintrc" — 2 copies found:
+      1. .../\Documents/\bootstrap-main/\node_modules/\xtend/\.jshintrc
+      2. ...ksg/\Documents/\bootstrap-main/\node_modules/\bl/\.jshintrc
+
+  [10] ".npmignore" — 6 copies found:
+      1. ...ents/\bootstrap-main/\node_modules/\json-buffer/\.npmignore
+      2. ...uments/\bootstrap-main/\node_modules/\fd-slicer/\.npmignore
+      3. ...\Documents/\bootstrap-main/\node_modules/\isexe/\.npmignore
+      4. ...ocuments/\bootstrap-main/\node_modules/\isarray/\.npmignore
+      5. ...ents/\bootstrap-main/\node_modules/\is-arrayish/\.npmignore
+      ... and 1 more
+
+  [11] ".nvmrc" — 2 copies found:
+      1. ...\bootstrap-main/\node_modules/\has-symbol-support-x/\.nvmrc
+      2. .../\bootstrap-main/\node_modules/\has-to-string-tag-x/\.nvmrc
+
+  [12] ".nycrc" — 24 copies found:
+      1. ...tstrap-main/\node_modules/\has-property-descriptors/\.nycrc
+      2. ...\bootstrap-main/\node_modules/\define-data-property/\.nycrc
+      3. ...ocuments/\bootstrap-main/\node_modules/\is-callable/\.nycrc
+      4. .../\bootstrap-main/\node_modules/\set-function-length/\.nycrc
+      5. ...ents/\bootstrap-main/\node_modules/\has-tostringtag/\.nycrc
+      ... and 19 more
+
+  [13] ".package-lock.json" — 5 copies found:
+      1. ...ksg/\Documents/\portfolio/\node_modules/\.package-lock.json
+      2. ...Documents/\bootstrap-main/\node_modules/\.package-lock.json
+      3. ...cuments/\network-dom-main/\node_modules/\.package-lock.json
+      4. ...ksg/\Documents/\posts-app/\node_modules/\.package-lock.json
+      5. ...\bootstrappp/\bootstrappp/\node_modules/\.package-lock.json
+
+  [14] ".prettierrc" — 2 copies found:
+      1. ...ts/\network-dom-main/\node_modules/\inflection/\.prettierrc
+      2. ...Documents/\posts-app/\node_modules/\inflection/\.prettierrc
+
+  [15] ".signature.p7s" — 3 copies found:
+      1. ...ServerMax/\packages/\Newtonsoft.Json.13.0.4/\.signature.p7s
+      2. ...oleServer/\packages/\Newtonsoft.Json.13.0.4/\.signature.p7s
+      3. ...niversity/\packages/\Newtonsoft.Json.13.0.4/\.signature.p7s
+
+  [16] ".suo" — 6 copies found:
+      1. ...eServerMax/\ConsoleServerMax/\.vs/\ConsoleServer/\v17/\.suo
+      2. ...eServerMax/\ConsoleServerMax/\.vs/\ConsoleServer/\v18/\.suo
+      3. ...rmsBindingSource/\.vs/\WindowsFormsBindingSource/\v17/\.suo
+      4. ...0-PrivateChat/\ConsoleServer/\.vs/\ConsoleServer/\v17/\.suo
+      5. ...tabaseUniversity/\.vs/\ProjectDatabaseUniversity/\v17/\.suo
+      ... and 1 more
+
+  [17] ".testem.json" — 2 copies found:
+      1. ...\bootstrap-main/\node_modules/\console-stream/\.testem.json
+      2. ...ents/\bootstrap-main/\node_modules/\is-object/\.testem.json
+
+  [18] ".travis.yml" — 14 copies found:
+      1. .../\bootstrap-main/\node_modules/\string_decoder/\.travis.yml
+      2. ...\bootstrap-main/\node_modules/\readable-stream/\.travis.yml
+      3. ...nts/\bootstrap-main/\node_modules/\json-buffer/\.travis.yml
+      4. ...Documents/\bootstrap-main/\node_modules/\from2/\.travis.yml
+      5. ...\Documents/\bootstrap-main/\node_modules/\pump/\.travis.yml
+      ... and 9 more
+
+  [19] ".uglifyjsrc.json" — 2 copies found:
+      1. ...-main/\node_modules/\has-symbol-support-x/\.uglifyjsrc.json
+      2. ...p-main/\node_modules/\has-to-string-tag-x/\.uglifyjsrc.json
+
+  [20] ".vite" — 5 copies found:
+      1. ...1]/\Users/\maksg/\Documents/\portfolio/\node_modules/\.vite
+      2. ...sers/\maksg/\Documents/\bootstrap-main/\node_modules/\.vite
+      3. ...rs/\maksg/\Documents/\network-dom-main/\node_modules/\.vite
+      4. ...1]/\Users/\maksg/\Documents/\posts-app/\node_modules/\.vite
+      5. ...g/\Documents/\bootstrappp/\bootstrappp/\node_modules/\.vite
+
+  [21] ".vscode" — 3 copies found:
+      1. ...g/\Documents/\bootstrap-main/\node_modules/\strnum/\.vscode
+      2. ...uments/\network-dom-main/\node_modules/\inflection/\.vscode
+      3. ...sg/\Documents/\posts-app/\node_modules/\inflection/\.vscode
+
+  [22] "000003.log" — 2 copies found:
+      1. ...lub/\Launcher/\Renderer/\Local Storage/\leveldb/\000003.log
+      2. ...b/\Launcher/\Renderer/\Service Worker/\Database/\000003.log
+
+  [23] "09-12-2025-ConsoleServer-v6.0-PrivateChat.7z" — 2 copies found:
+      1. ...egram Desktop/\09-12-2025-ConsoleServer-v6.0-PrivateChat.7z
+      2. ...ий стол/\09-12-2025-ConsoleServer-v6.0-PrivateChat.7z
+
+  [24] "15pro.jpg" — 2 copies found:
+      1. ...4f2c-bbb0-2a5478ce64c1]/\Users/\maksg/\Downloads/\15pro.jpg
+      2. ...sers/\maksg/\Documents/\bootstrap-main/\src/\img/\15pro.jpg
+
+  [25] "17.14.1290.42047" — 3 copies found:
+      1. ...erMax/\.vs/\ConsoleServer/\CopilotIndices/\17.14.1290.42047
+      2. ...WindowsFormsBindingSource/\CopilotIndices/\17.14.1290.42047
+      3. ...oject/\.vs/\CinemaProject/\CopilotIndices/\17.14.1290.42047
+
+  [26] "17.14.878.3237" — 3 copies found:
+      1. ...rverMax/\.vs/\ConsoleServer/\CopilotIndices/\17.14.878.3237
+      2. ...eServer/\.vs/\ConsoleServer/\CopilotIndices/\17.14.878.3237
+      3. .../\ProjectDatabaseUniversity/\CopilotIndices/\17.14.878.3237
+
+  [27] "49810502" — 3 copies found:
+      1. ...менты/\Rockstar Games/\Social Club/\Profiles/\49810502
+      2. ...�ументы/\Rockstar Games/\Launcher/\Profiles/\49810502
+      3. ...окументы/\Rockstar Games/\GTA V/\Profiles/\49810502
+
+  [28] "63d7e647d41b4f93ba4a9d64b1fc47da.ico" — 2 copies found:
+      1. ...ers/\maksg/\Downloads/\63d7e647d41b4f93ba4a9d64b1fc47da.ico
+      2. ...абочий стол/\63d7e647d41b4f93ba4a9d64b1fc47da.ico
+
+  [29] "7 zadanie 123" — 2 copies found:
+      1. ...-bbb0-2a5478ce64c1]/\Users/\maksg/\Documents/\7 zadanie 123
+      2. ...4c1]/\Users/\maksg/\Documents/\7 zadanie 123/\7 zadanie 123
+
+  [30] "7 zadanie 123.7z" — 3 copies found:
+      1. ...b0-2a5478ce64c1]/\Users/\maksg/\Documents/\7 zadanie 123.7z
+      2. ...b0-2a5478ce64c1]/\Users/\maksg/\Downloads/\7 zadanie 123.7z
+      3. ...]/\Users/\maksg/\Documents/\7 zadanie 123/\7 zadanie 123.7z
+
+  Total duplicate groups: 1826
+  (first 30 shown)
+
+----------------------------------------------------------------------
+  3. FILE TYPE STATISTICS
+----------------------------------------------------------------------
+
+  Top file extensions by count:
+
+  +----------------------+------------+----------+
+  | Extension            |    Count   |   Share  |
+  +----------------------+------------+----------+
+  | .js                   | 3319       | 28.2   % |
+  | .svg                  | 2084       | 17.7   % |
+  | .ts                   | 1648       | 14.0   % |
+  | .json                 | 772        | 6.6    % |
+  | .md                   | 711        | 6.0    % |
+  | .map                  | 454        | 3.9    % |
+  | .scss                 | 280        | 2.4    % |
+  | .bin                  | 237        | 2.0    % |
+  | .flow                 | 211        | 1.8    % |
+  | .scache               | 197        | 1.7    % |
+  | .png                  | 138        | 1.2    % |
+  | .cs                   | 90         | 0.8    % |
+  | .jpg                  | 85         | 0.7    % |
+  | .lnk                  | 80         | 0.7    % |
+  | .exe                  | 71         | 0.6    % |
+  | .rpak                 | 68         | 0.6    % |
+  | .css                  | 61         | 0.5    % |
+  | .dll                  | 60         | 0.5    % |
+  | .ps1                  | 54         | 0.5    % |
+  | .cjs                  | 53         | 0.4    % |
+  | .cmd                  | 53         | 0.4    % |
+  | .mjs                  | 51         | 0.4    % |
+  | .yml                  | 48         | 0.4    % |
+  | .cache                | 45         | 0.4    % |
+  | .txt                  | 42         | 0.4    % |
+  +----------------------+------------+----------+
+
+  Without extension: 3117 (20.9%)
+
+  Total unique extensions: 151
+
+======================================================================
+  Report generated successfully.
+======================================================================
