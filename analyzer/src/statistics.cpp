@@ -15,12 +15,6 @@ void Statistics::writeLine(std::ofstream& file, const std::string& line) {
     }
 }
 
-// обрезает длинные пути для читаемости отчета
-static std::string shortenPath(const std::string& path, size_t maxLen = 90) {
-    if (path.length() <= maxLen) return path;
-    return "..." + path.substr(path.length() - maxLen + 3);
-}
-
 // разделитель для красивого форматирования
 static std::string separator(char c = '=', int len = 70) {
     return std::string(len, c);
@@ -91,7 +85,7 @@ void Statistics::calculateTimeline(std::ofstream& out, const std::vector<FileRec
             ss << "(" << std::setw(10) << sz.str() << ") ";
         }
 
-        ss << "\n     " << shortenPath(rec.fullPath, 65);
+        ss << "\n     " << rec.fullPath;
         writeLine(out, ss.str());
         writeLine(out, "");
     }
@@ -127,7 +121,7 @@ void Statistics::findDuplicates(std::ofstream& out, const std::vector<FileRecord
             // выводим первые 5 копий
             for (size_t i = 0; i < paths.size() && i < 5; i++) {
                 std::stringstream ss;
-                ss << "      " << (i + 1) << ". " << shortenPath(paths[i], 62);
+                ss << "      " << (i + 1) << ". " << paths[i];
                 writeLine(out, ss.str());
             }
             if (paths.size() > 5) {
