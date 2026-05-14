@@ -1,1 +1,3 @@
-place your db files here
+Place database pairs in subfolders.
+
+Each subfolder = one pair = one report.
