@@ -4,9 +4,10 @@
 #include <cstdio>
 #include <filesystem>
 #include <sqlite3.h>
+#include <algorithm>
+#include <sstream>
 #include "database.h"
 #include "statistics.h"
-#include <algorithm>
 
 namespace fs = std::filesystem;
 
@@ -22,7 +23,7 @@ void cleanupTempFiles(const std::string& folder) {
     }
 }
 
-// определяет какой из двух файлов это gather база по наличию таблицы SystemIndex_Gthr
+// определяет какой из двух файлов это gather база
 std::string detectGatherDb(const std::string& path1, const std::string& path2) {
     sqlite3* db;
     if (sqlite3_open_v2(path1.c_str(), &db, SQLITE_OPEN_READONLY, NULL) == SQLITE_OK) {
@@ -100,26 +101,60 @@ bool processFolder(const std::string& inputFolder, const std::string& outputFile
 
     std::cout << "[+] Extracted " << records.size() << " records." << std::endl;
 
-    // сохраняем таблицу файлов в новую базу SQLite
+    // сохраняем таблицу файлов в базу SQLite
     std::string dbOutputFile = outputFile;
     size_t dot = dbOutputFile.find_last_of('.');
-    if (dot != std::string::npos) {
+    if (dot != std::string::npos)
         dbOutputFile = dbOutputFile.substr(0, dot) + ".db";
-    } else {
+    else
         dbOutputFile += ".db";
-    }
     dbMgr.saveToDatabase(records, dbOutputFile);
 
+    // сохраняем текстовый отчёт
     Statistics stats;
     stats.generateReport(records, outputFile);
     return true;
 }
 
 int main(int argc, char* argv[]) {
-    // если переданы аргументы — работаем как раньше (один запуск)
+    // режим с аргументом -d: несколько папок через ;
+    if (argc >= 3 && std::string(argv[1]) == "-d") {
+        std::string arg = argv[2];
+        std::vector<std::string> folders;
+        std::stringstream ss(arg);
+        std::string item;
+        while (std::getline(ss, item, ';')) {
+            if (!item.empty()) folders.push_back(item);
+        }
+
+        std::cout << "===== WINDOWS 11 INDEX ANALYZER =====" << std::endl;
+        std::cout << "Multiple folders mode (" << folders.size() << " paths)" << std::endl;
+        std::cout << "=====================================" << std::endl;
+
+        fs::create_directory("output");
+        int processed = 0;
+        int idx = 1;
+        for (const auto& folder : folders) {
+            std::string outputFile = "output/report_" + std::to_string(idx) + ".txt";
+            std::cout << "\n--- Processing: " << folder << " ---" << std::endl;
+            if (processFolder(folder, outputFile)) {
+                cleanupTempFiles(folder);
+                std::cout << "[OK] Report saved to " << outputFile << std::endl;
+                processed++;
+            }
+            idx++;
+        }
+
+        std::cout << "\n[+] Processed " << processed << "/" << folders.size() << " folders." << std::endl;
+        std::cout << "Press Enter to exit..." << std::endl;
+        std::cin.get();
+        return 0;
+    }
+
+    // режим с прямыми путями (старый способ)
     if (argc >= 2) {
         std::string gatherDbPath = argv[1];
-        std::string windowsDbPath = (argc >= 3) ? argv[2] : "data/1/Windows.db";
+        std::string windowsDbPath = (argc >= 3) ? argv[2] : "";
         std::string outputFile = (argc >= 4) ? argv[3] : "output/report.txt";
 
         std::cout << "===== WINDOWS 11 INDEX ANALYZER =====" << std::endl;
@@ -141,14 +176,12 @@ int main(int argc, char* argv[]) {
 
         std::cout << "[+] Extracted " << records.size() << " records." << std::endl;
 
-        // сохраняем таблицу файлов в новую базу SQLite
         std::string dbOutputFile = outputFile;
         size_t dot = dbOutputFile.find_last_of('.');
-        if (dot != std::string::npos) {
+        if (dot != std::string::npos)
             dbOutputFile = dbOutputFile.substr(0, dot) + ".db";
-        } else {
+        else
             dbOutputFile += ".db";
-        }
         dbMgr.saveToDatabase(records, dbOutputFile);
 
         Statistics stats;
@@ -161,46 +194,51 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    // без аргументов — сканируем подпапки в data/
+    // двойной клик — ищем базы в data/
     std::cout << "===== WINDOWS 11 INDEX ANALYZER =====" << std::endl;
     std::cout << "Scanning data/ folder..." << std::endl;
     std::cout << "=====================================" << std::endl;
 
-    std::vector<std::string> subfolders;
-    try {
-        for (const auto& entry : fs::directory_iterator("data")) {
-            if (entry.is_directory()) {
-                subfolders.push_back(entry.path().string());
-            }
-        }
-    } catch (...) {}
+    std::vector<std::string> dbFiles = findDbFiles("data");
+    std::cout << "[*] Found " << dbFiles.size() << " .db files in data/" << std::endl;
 
-    if (subfolders.empty()) {
-        std::cout << "[!] No subfolders found in data/." << std::endl;
-        std::cout << "Create subfolders (1, 2, ...) with database pairs inside." << std::endl;
+    if (dbFiles.size() < 2) {
+        std::cout << "[!] Need 2 database files in data/ folder." << std::endl;
+        std::cout << "Place Windows-gather.db and Windows.db in data/" << std::endl;
+        std::cout << "Or use: program.exe -d \"folder1;folder2;...\"" << std::endl;
         std::cout << "Press Enter to exit..." << std::endl;
         std::cin.get();
         return 1;
     }
 
-    std::sort(subfolders.begin(), subfolders.end());
+    std::string gatherDbPath = detectGatherDb(dbFiles[0], dbFiles[1]);
+    std::string windowsDbPath = (gatherDbPath == dbFiles[0]) ? dbFiles[1] : dbFiles[0];
 
-    fs::create_directory("output");
+    std::cout << "[*] Gather:  " << gatherDbPath << std::endl;
+    std::cout << "[*] Windows: " << windowsDbPath << std::endl;
 
-    int processed = 0;
-    for (const auto& folder : subfolders) {
-        std::string folderName = fs::path(folder).filename().string();
-        std::string outputFile = "output/report_" + folderName + ".txt";
+    DatabaseManager dbMgr;
+    std::vector<FileRecord> records;
 
-        std::cout << "\n--- Processing folder: " << folderName << " ---" << std::endl;
-        if (processFolder(folder, outputFile)) {
-            cleanupTempFiles(folder);
-            std::cout << "[OK] Report saved to " << outputFile << std::endl;
-            processed++;
-        }
+    if (!dbMgr.extractData(gatherDbPath, windowsDbPath, records)) {
+        std::cerr << "[!] ERROR: Failed to extract data." << std::endl;
+        cleanupTempFiles("data");
+        std::cout << "Press Enter to exit..." << std::endl;
+        std::cin.get();
+        return 1;
     }
 
-    std::cout << "\n[+] Processed " << processed << "/" << subfolders.size() << " folders." << std::endl;
+    std::cout << "[+] Extracted " << records.size() << " records." << std::endl;
+
+    std::string outputFile = "output/report.txt";
+    std::string dbOutputFile = "output/report.db";
+    dbMgr.saveToDatabase(records, dbOutputFile);
+
+    Statistics stats;
+    stats.generateReport(records, outputFile);
+
+    cleanupTempFiles("data");
+    std::cout << "[OK] Report saved to " << outputFile << std::endl;
     std::cout << "Press Enter to exit..." << std::endl;
     std::cin.get();
     return 0;
