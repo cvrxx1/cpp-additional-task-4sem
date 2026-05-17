@@ -1,0 +1,275 @@
+
+======================================================================
+     WINDOWS 11 SEARCH INDEX REPORT
+======================================================================
+
+  Total entries in index: 5139
+
+----------------------------------------------------------------------
+  1. ACTIVITY TIMELINE
+     (recently modified files)
+----------------------------------------------------------------------
+
+  Last 20 modified files:
+
+   1. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 15.01.30.07.mp4
+
+   2. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Downloads/\Telegram Desktop/\video_2025-02-24_21-34-14.mp4
+
+   3. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Jre-legacy/\Jre-legacy 2025.02.17 - 21.46.08.01.mp4
+
+   4. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Desktop/\Desktop 2025.08.18 - 20.07.48.01.mp4
+
+   5. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Warframe/\Warframe 2025.02.07 - 03.36.18.01.mp4
+
+   6. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 14.40.37.02.mp4
+
+   7. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 14.43.31.03.mp4
+
+   8. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 14.52.07.04.mp4
+
+   9. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 14.54.45.05.mp4
+
+  10. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6/\Battlefield 6 2025.10.19 - 14.56.16.06.mp4
+
+  11. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Downloads/\Telegram Desktop/\2025-03-12 Лекция по алгебре к кр.mp4
+
+  12. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Desktop/\Desktop 2025.08.11 - 13.18.22.02.mp4
+
+  13. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Downloads/\Telegram Desktop/\0529 (1).mp4
+
+  14. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Dota 2/\Dota 2 2025.10.05 - 12.48.20.02.mp4
+
+  15. [video/mp4] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Warframe/\Warframe 2025.02.28 - 21.06.17.01.mp4
+
+  16. [text/xml] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Black Desert/\UserCache/\gameVariable.xml
+
+  17. [text/xml] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Black Desert/\UserCache/\4897024/\gameVariable.xml
+
+  18. [text/xml] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Battlefield 1/\settings/\meta.xml
+
+  19. [text/xml] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\GameCenter/\LostArk/\MediaInfo.xml
+
+  20. [text/xml] (     0.0 B) 
+     file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\GameCenter/\AtomicHeart/\MediaInfo.xml
+
+
+----------------------------------------------------------------------
+  2. DUPLICATE FILES
+     (by file name)
+----------------------------------------------------------------------
+
+  [1] ".gitignore" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Рабочий стол/\gInk-master/\.gitignore
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Рабочий стол/\zapret-discord-youtube-main/\.gitignore
+
+  [2] "000003.log" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Service Worker/\Database/\000003.log
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Local Storage/\leveldb/\000003.log
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Platform Notifications/\000003.log
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\MicrosoftWindows.Client.CBS_cw5n1h2txyewy/\LocalState/\EBWebView/\Default/\IndexedDB/\https_www.bing.com_0.indexeddb.leveldb/\000003.log
+
+  [3] "0E7B1F1E" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\GTAV Enhanced/\Profiles/\0E7B1F1E
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Profiles/\0E7B1F1E
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Launcher/\Profiles/\0E7B1F1E
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\GTA V/\Profiles/\0E7B1F1E
+
+  [4] "0F144527BB1483E6" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Music/\iTunes/\Album Artwork/\Cloud/\0F144527BB1483E6
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Music/\iTunes/\Album Artwork/\Custom/\0F144527BB1483E6
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Music/\iTunes/\Album Artwork/\Cache/\0F144527BB1483E6
+
+  [5] "1551360" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Public/\Documents/\OnlineFix/\1551360
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Public/\Documents/\Steam/\CODEX/\1551360
+
+  [6] "3647222921wleabcEoxlt-eengsairo.sqlite-shm" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Roaming/\Mozilla/\Firefox/\Profiles/\8ixn41oe.default-release/\storage/\default/\moz-extension+++e92f5786-ef1f-4d26-8a35-5359addd697d^userContextId=4294967295/\idb/\3647222921wleabcEoxlt-eengsairo.sqlite-shm
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Roaming/\Mozilla/\Firefox/\Profiles/\8ixn41oe.default-release/\storage/\default/\moz-extension+++2c8b79aa-6d84-4085-9f94-a053e87f8f1c^userContextId=4294967295/\idb/\3647222921wleabcEoxlt-eengsairo.sqlite-shm
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Roaming/\Mozilla/\Firefox/\Profiles/\8ixn41oe.default-release/\storage/\default/\moz-extension+++94365aa3-69f7-4d98-87d5-92ca8c40ef49^userContextId=4294967295/\idb/\3647222921wleabcEoxlt-eengsairo.sqlite-shm
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Roaming/\Mozilla/\Firefox/\Profiles/\8ixn41oe.default-release/\storage/\default/\moz-extension+++c6168077-3aa7-4e5c-ad61-3575e581b792^userContextId=4294967295/\idb/\3647222921wleabcEoxlt-eengsairo.sqlite-shm
+
+  [7] "ActivitiesCache.db" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\8435627949c0886c/\ActivitiesCache.db
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\AAD.56442ff8-d9f1-460d-976a-fac8d3b7d6b1/\ActivitiesCache.db
+
+  [8] "ActivitiesCache.db-shm" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\AAD.56442ff8-d9f1-460d-976a-fac8d3b7d6b1/\ActivitiesCache.db-shm
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\8435627949c0886c/\ActivitiesCache.db-shm
+
+  [9] "ActivitiesCache.db-wal" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\8435627949c0886c/\ActivitiesCache.db-wal
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\ConnectedDevicesPlatform/\AAD.56442ff8-d9f1-460d-976a-fac8d3b7d6b1/\ActivitiesCache.db-wal
+
+  [10] "AppData" — 113 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Default/\AppData
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\MicrosoftCorporationII.PantoneColoroftheYear2022_8wekyb3d8bbwe/\AppData
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj/\AppData
+      5. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\WhitePeacock.ThemesWidgetIconsWallpapers_f36vxfxfybdn0/\AppData
+      ... and 108 more
+
+  [11] "Backups" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Players/\Backups
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Worlds/\Backups
+
+  [12] "Battlefield 6" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Battlefield 6
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Battlefield 6
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Battlefield 6
+
+  [13] "Battlefield 6 Open Beta" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Battlefield 6 Open Beta
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Battlefield 6 Open Beta
+
+  [14] "BossChecklist.tmod" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\infernumsol/\Mods/\BossChecklist.tmod
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends2/\Mods/\BossChecklist.tmod
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends/\Mods/\BossChecklist.tmod
+
+  [15] "CURRENT" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Session Storage/\CURRENT
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Service Worker/\Database/\CURRENT
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Local Storage/\leveldb/\CURRENT
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Platform Notifications/\CURRENT
+
+  [16] "Cache" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Cache
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Cache
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Music/\iTunes/\Album Artwork/\Cache
+
+  [17] "CalamityMod.tmod" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\infernumsol/\Mods/\CalamityMod.tmod
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends2/\Mods/\CalamityMod.tmod
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends/\Mods/\CalamityMod.tmod
+
+  [18] "CalamityModMusic.tmod" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\infernumsol/\Mods/\CalamityModMusic.tmod
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends2/\Mods/\CalamityModMusic.tmod
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends/\Mods/\CalamityModMusic.tmod
+
+  [19] "CalamityRuTranslate.tmod" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\infernumsol/\Mods/\CalamityRuTranslate.tmod
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\CalamityRuTranslate.tmod
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends2/\Mods/\CalamityRuTranslate.tmod
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\My Games/\Terraria/\tModLoader/\Mods/\ModPacks/\friends/\Mods/\CalamityRuTranslate.tmod
+
+  [20] "Capture001.png" — 8 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\Feedback/\{7ECE4658-0C43-42D2-BCAD-5C8A3CBD7CFC}/\Capture001.png
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\Feedback/\{F40F1668-EBB5-41E9-8D9A-2758453B0B83}/\Capture001.png
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\Feedback/\{D80968D9-B5F8-488D-B5B6-D6D1554E582F}/\Capture001.png
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\Feedback/\{6220F552-D113-4BC6-B1B5-87558A10E1E5}/\Capture001.png
+      5. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Изображения/\Feedback/\{3E30A8C0-34FE-4DD5-9FAF-C668AD1BEF10}/\Capture001.png
+      ... and 3 more
+
+  [21] "Cookies" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Network/\Cookies
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\MicrosoftWindows.Client.CBS_cw5n1h2txyewy/\LocalState/\EBWebView/\Default/\Network/\Cookies
+
+  [22] "Cookies-journal" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Network/\Cookies-journal
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\MicrosoftWindows.Client.CBS_cw5n1h2txyewy/\LocalState/\EBWebView/\Default/\Network/\Cookies-journal
+
+  [23] "CrashDumps" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Battlefield 6 Open Beta/\CrashDumps
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Battlefield 6/\CrashDumps
+
+  [24] "CrashpadMetrics-active.pma" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Microsoft/\Edge/\User Data/\CrashpadMetrics-active.pma
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\CEF/\User Data/\CrashpadMetrics-active.pma
+
+  [25] "Database" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\OneDrive/\Документы/\Rockstar Games/\Social Club/\Launcher/\Renderer/\Service Worker/\Database
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\AppData/\Local/\Packages/\Microsoft.YourPhone_8wekyb3d8bbwe/\LocalCache/\Indexed/\1e71b7cd-e35f-465d-bf56-4428d5859223/\System/\Database
+
+  [26] "Default" — 2 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Default
+      2. winrt:\//\{S-1-5-21-2818541956-2496542007-2946739521-1001}/\LS/\Desktop/\Microsoft Edge/\stable/\Profiles/\Default
+
+  [27] "Desktop" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Public/\Desktop
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Default/\Desktop
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Videos/\Desktop
+
+  [28] "Desktop.ini" — 4 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\ProgramData/\Microsoft/\Windows/\Start Menu/\Programs/\System Tools/\Desktop.ini
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\ProgramData/\Microsoft/\Windows/\Start Menu/\Programs/\Accessibility/\Desktop.ini
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\ProgramData/\Microsoft/\Windows/\Start Menu/\Programs/\Maintenance/\Desktop.ini
+      4. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Windows/\Web/\Wallpaper/\ThemeA/\Desktop.ini
+
+  [29] "Documents" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Public/\Documents
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Default/\Documents
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Documents
+
+  [30] "Downloads" — 3 copies found:
+      1. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Public/\Downloads
+      2. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\Default/\Downloads
+      3. file:\C:\/\[88448000-5cea-4355-b519-6cbe23f37f11]/\Users/\otdee/\Downloads
+
+  Total duplicate groups: 120
+  (first 30 shown)
+
+----------------------------------------------------------------------
+  3. FILE TYPE STATISTICS
+----------------------------------------------------------------------
+
+  Top file extensions by count:
+
+  +----------------------+------------+----------+
+  | Extension            |    Count   |   Share  |
+  +----------------------+------------+----------+
+  | .png                  | 1220       | 50.1   % |
+  | .pdf                  | 128        | 5.3    % |
+  | .docx                 | 105        | 4.3    % |
+  | .lnk                  | 104        | 4.3    % |
+  | .zip                  | 86         | 3.5    % |
+  | .txt                  | 72         | 3.0    % |
+  | .jpg                  | 64         | 2.6    % |
+  | .ini                  | 46         | 1.9    % |
+  | .tmod                 | 44         | 1.8    % |
+  | .dat                  | 39         | 1.6    % |
+  | .exe                  | 26         | 1.1    % |
+  | .log                  | 26         | 1.1    % |
+  | .bak                  | 24         | 1.0    % |
+  | .json                 | 23         | 0.9    % |
+  | .bat                  | 20         | 0.8    % |
+  | .cs                   | 19         | 0.8    % |
+  | .doc                  | 18         | 0.7    % |
+  | .itc2                 | 17         | 0.7    % |
+  | .sqlite-shm           | 17         | 0.7    % |
+  | .mp4                  | 15         | 0.6    % |
+  | .pptx                 | 14         | 0.6    % |
+  | .db                   | 13         | 0.5    % |
+  | .xml                  | 13         | 0.5    % |
+  | .rar                  | 12         | 0.5    % |
+  | .bin                  | 11         | 0.5    % |
+  +----------------------+------------+----------+
+
+  Without extension: 2705 (52.6%)
+
+  Total unique extensions: 123
+
+======================================================================
+  Report generated successfully.
+======================================================================

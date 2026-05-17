@@ -27,7 +27,6 @@ std::map<int, PathNode> DatabaseManager::loadPathMap(sqlite3* db) {
         while (sqlite3_step(stmt) == SQLITE_ROW) {
             PathNode node;
             node.scopeId = sqlite3_column_int(stmt, 0);
-            // parent может быть null для корневых элементов
             node.parentId = sqlite3_column_type(stmt, 1) != SQLITE_NULL ? sqlite3_column_int(stmt, 1) : -1;
             const unsigned char* nameText = sqlite3_column_text(stmt, 2);
             node.name = nameText ? reinterpret_cast<const char*>(nameText) : "";
@@ -39,20 +38,18 @@ std::map<int, PathNode> DatabaseManager::loadPathMap(sqlite3* db) {
 }
 
 // рекурсивно поднимается по дереву папок пока не дойдет до корня
-// depth ограничивает глубину чтобы избежать бесконечного цикла
 std::string DatabaseManager::buildFullPath(int scopeId, const std::map<int, PathNode>& pathMap, int depth) {
     if (depth > 20) return "...";
     auto it = pathMap.find(scopeId);
     if (it == pathMap.end()) return "?";
     const PathNode& node = it->second;
-    if (node.parentId == -1) return node.name; // достигли корня
+    if (node.parentId == -1) return node.name;
     std::string parentPath = buildFullPath(node.parentId, pathMap, depth + 1);
     if (parentPath.empty() || parentPath == "?") return node.name;
     return parentPath + "\\" + node.name;
 }
 
 // загружает размер и дату изменения файлов из windows.db
-// данные запрашиваются пачками по 500 штук чтобы не превысить лимит длины sql
 void DatabaseManager::loadMetadata(const std::string& windowsDbPath, std::vector<FileRecord>& records) {
     if (records.empty()) return;
     sqlite3* db;
@@ -60,7 +57,6 @@ void DatabaseManager::loadMetadata(const std::string& windowsDbPath, std::vector
         std::cerr << "[!] Cannot open Windows.db: " << sqlite3_errmsg(db) << std::endl;
         return;
     }
-    // регистрируем ту же заглушку коллации для windows.db
     sqlite3_create_collation(db, "UNICODE_en-US_LINGUISTIC_IGNORECASE", SQLITE_UTF8, NULL, collationStub);
 
     std::map<int, std::pair<long long, std::string>> metaMap;
@@ -74,7 +70,6 @@ void DatabaseManager::loadMetadata(const std::string& windowsDbPath, std::vector
             idList += std::to_string(records[i].documentId);
         }
 
-        // columnid 13 это system.size а 15 это system.datemodified
         std::string query = 
             "SELECT ps.WorkId, "
             "MAX(CASE WHEN ps.ColumnId=13 THEN ps.Value END), "
@@ -97,7 +92,6 @@ void DatabaseManager::loadMetadata(const std::string& windowsDbPath, std::vector
     }
     sqlite3_close(db);
 
-    // переносим метаданные в записи
     for (auto& rec : records) {
         auto it = metaMap.find(rec.documentId);
         if (it != metaMap.end()) {
@@ -120,7 +114,6 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
         std::cerr << "[!] Error opening gather DB: " << sqlite3_errmsg(db) << std::endl;
         return false;
     }
-    // обязательная регистрация коллации перед любыми запросами
     sqlite3_create_collation(db, "UNICODE_en-US_LINGUISTIC_IGNORECASE", SQLITE_UTF8, NULL, collationStub);
 
     std::cout << "[*] Loading folder hierarchy..." << std::endl;
@@ -144,18 +137,15 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
         const unsigned char* nameText = sqlite3_column_text(stmt, 1);
         rec.fileName = nameText ? reinterpret_cast<const char*>(nameText) : "?";
 
-        // извлекаем расширение из имени файла
         std::string fname = rec.fileName;
         size_t dot = fname.find_last_of('.');
         if (dot != std::string::npos && dot > 0 && dot < fname.length() - 1) {
             rec.fileType = fname.substr(dot + 1);
-            // отсекаем слишком длинные псевдо расширения
             if (rec.fileType.length() > 10) rec.fileType = "no_ext";
         } else {
             rec.fileType = "no_ext";
         }
 
-        // восстанавливаем полный путь по дереву папок
         int scopeId = sqlite3_column_type(stmt, 2) != SQLITE_NULL ? sqlite3_column_int(stmt, 2) : -1;
         if (scopeId == -1) rec.fullPath = rec.fileName;
         else {
@@ -172,7 +162,6 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
 
     std::cout << "[+] Records extracted from gather: " << count << std::endl;
 
-    // загружаем метаданные из второй базы
     std::cout << "[*] Loading metadata from " << windowsDbPath << "..." << std::endl;
     loadMetadata(windowsDbPath, records);
 
@@ -181,4 +170,50 @@ bool DatabaseManager::extractData(const std::string& gatherDbPath,
     std::cout << "[+] Records with metadata: " << withMeta << "/" << records.size() << std::endl;
 
     return count > 0;
+}
+
+// сохраняет список файлов в новую базу SQLite
+bool DatabaseManager::saveToDatabase(const std::vector<FileRecord>& records, const std::string& outputPath) {
+    sqlite3* db;
+    if (sqlite3_open(outputPath.c_str(), &db) != SQLITE_OK) {
+        std::cerr << "[!] Cannot create output database: " << sqlite3_errmsg(db) << std::endl;
+        return false;
+    }
+
+    const char* createTable = 
+        "CREATE TABLE IF NOT EXISTS Data ("
+        "  file_name TEXT NOT NULL, "
+        "  full_path TEXT NOT NULL"
+        ");";
+
+    char* errMsg = nullptr;
+    if (sqlite3_exec(db, createTable, nullptr, nullptr, &errMsg) != SQLITE_OK) {
+        std::cerr << "[!] SQL error: " << errMsg << std::endl;
+        sqlite3_free(errMsg);
+        sqlite3_close(db);
+        return false;
+    }
+
+    const char* insertQuery = "INSERT INTO Data (file_name, full_path) VALUES (?, ?);";
+    sqlite3_stmt* stmt;
+    if (sqlite3_prepare_v2(db, insertQuery, -1, &stmt, nullptr) != SQLITE_OK) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_exec(db, "BEGIN TRANSACTION;", nullptr, nullptr, nullptr);
+
+    for (const auto& rec : records) {
+        sqlite3_bind_text(stmt, 1, rec.fileName.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt, 2, rec.fullPath.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_step(stmt);
+        sqlite3_reset(stmt);
+    }
+
+    sqlite3_exec(db, "COMMIT;", nullptr, nullptr, nullptr);
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    std::cout << "[+] Saved " << records.size() << " records to " << outputPath << std::endl;
+    return true;
 }

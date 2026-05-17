@@ -100,6 +100,16 @@ bool processFolder(const std::string& inputFolder, const std::string& outputFile
 
     std::cout << "[+] Extracted " << records.size() << " records." << std::endl;
 
+    // сохраняем таблицу файлов в новую базу SQLite
+    std::string dbOutputFile = outputFile;
+    size_t dot = dbOutputFile.find_last_of('.');
+    if (dot != std::string::npos) {
+        dbOutputFile = dbOutputFile.substr(0, dot) + ".db";
+    } else {
+        dbOutputFile += ".db";
+    }
+    dbMgr.saveToDatabase(records, dbOutputFile);
+
     Statistics stats;
     stats.generateReport(records, outputFile);
     return true;
@@ -131,6 +141,16 @@ int main(int argc, char* argv[]) {
 
         std::cout << "[+] Extracted " << records.size() << " records." << std::endl;
 
+        // сохраняем таблицу файлов в новую базу SQLite
+        std::string dbOutputFile = outputFile;
+        size_t dot = dbOutputFile.find_last_of('.');
+        if (dot != std::string::npos) {
+            dbOutputFile = dbOutputFile.substr(0, dot) + ".db";
+        } else {
+            dbOutputFile += ".db";
+        }
+        dbMgr.saveToDatabase(records, dbOutputFile);
+
         Statistics stats;
         stats.generateReport(records, outputFile);
 
@@ -146,7 +166,6 @@ int main(int argc, char* argv[]) {
     std::cout << "Scanning data/ folder..." << std::endl;
     std::cout << "=====================================" << std::endl;
 
-    // ищем подпапки в data/
     std::vector<std::string> subfolders;
     try {
         for (const auto& entry : fs::directory_iterator("data")) {
@@ -164,15 +183,12 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // сортируем для порядка (1, 2, 3, ...)
     std::sort(subfolders.begin(), subfolders.end());
 
-    // создаём папку output если её нет
     fs::create_directory("output");
 
     int processed = 0;
     for (const auto& folder : subfolders) {
-        // имя подпапки (например "1", "2")
         std::string folderName = fs::path(folder).filename().string();
         std::string outputFile = "output/report_" + folderName + ".txt";
 

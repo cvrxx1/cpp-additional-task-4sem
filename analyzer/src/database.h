@@ -32,6 +32,9 @@ public:
                      const std::string& windowsDbPath, 
                      std::vector<FileRecord>& records);
 
+    // сохраняет список файлов в новую базу SQLite (таблица Data)
+    bool saveToDatabase(const std::vector<FileRecord>& records, const std::string& outputPath);
+
 private:
     // загружает иерархию папок из SystemIndex_GthrPth
     std::map<int, PathNode> loadPathMap(sqlite3* db);

@@ -1,0 +1,282 @@
+
+======================================================================
+     WINDOWS 11 SEARCH INDEX REPORT
+======================================================================
+
+  Total entries in index: 23739
+
+----------------------------------------------------------------------
+  1. ACTIVITY TIMELINE
+     (recently modified files)
+----------------------------------------------------------------------
+
+  Last 20 modified files:
+
+   1. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\document/\PDFTrailer.d.ts
+
+   2. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\acroform/\PDFAcroCheckBox.d.ts
+
+   3. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\acroform/\PDFAcroButton.d.ts
+
+   4. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\acroform/\index.d.ts
+
+   5. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\acroform/\flags.d.ts
+
+   6. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\PDFWidgetAnnotation.d.ts
+
+   7. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\PDFAnnotation.d.ts
+
+   8. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\index.d.ts
+
+   9. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\flags.d.ts
+
+  10. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\BorderStyle.d.ts
+
+  11. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\annotation/\AppearanceCharacteristics.d.ts
+
+  12. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\document/\PDFTrailerDict.d.ts
+
+  13. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\acroform/\PDFAcroChoice.d.ts
+
+  14. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\document/\PDFHeader.d.ts
+
+  15. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\document/\PDFCrossRefSection.d.ts
+
+  16. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\embedders/\StandardFontEmbedder.d.ts
+
+  17. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\embedders/\PngEmbedder.d.ts
+
+  18. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\embedders/\PDFPageEmbedder.d.ts
+
+  19. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\embedders/\JpegEmbedder.d.ts
+
+  20. [video/vnd.dlna.mpeg-tts] (     0.0 B) 
+     ...\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\pdf-lib@1.17.1/\node_modules/\pdf-lib/\ts3.4/\cjs/\core/\embedders/\JavaScriptEmbedder.d.ts
+
+
+----------------------------------------------------------------------
+  2. DUPLICATE FILES
+     (by file name)
+----------------------------------------------------------------------
+
+  [1] ".agents" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.codex/\.tmp/\bundled-marketplaces/\openai-bundled/\.agents
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\plugins/\openai-primary-runtime/\.agents
+
+  [2] ".cmake" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\build/\.cmake
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\build/\.cmake
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\build/\.cmake
+
+  [3] ".codex-plugin" — 6 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.codex/\plugins/\cache/\openai-bundled/\browser-use/\0.1.0-alpha1/\.codex-plugin
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.codex/\.tmp/\bundled-marketplaces/\openai-bundled/\plugins/\latex-tectonic/\.codex-plugin
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.codex/\.tmp/\bundled-marketplaces/\openai-bundled/\plugins/\browser-use/\.codex-plugin
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\plugins/\openai-primary-runtime/\plugins/\spreadsheets/\.codex-plugin
+      5. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\plugins/\openai-primary-runtime/\plugins/\presentations/\.codex-plugin
+      ... and 1 more
+
+  [4] ".cproject" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.cproject
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.cproject
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.cproject
+
+  [5] ".cursor" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.cursor
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.cursor
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.cursor
+
+  [6] ".editorconfig" — 4 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\jszip@3.10.1/\node_modules/\jszip/\.editorconfig
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.editorconfig
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.editorconfig
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.editorconfig
+
+  [7] ".eslintrc.js" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\jszip@3.10.1/\node_modules/\jszip/\.eslintrc.js
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\hash.js@1.1.7/\node_modules/\hash.js/\.eslintrc.js
+
+  [8] ".f2py_f2cmap" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\python/\Lib/\site-packages/\numpy/\f2py/\tests/\src/\f2cmap/\.f2py_f2cmap
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\python/\Lib/\site-packages/\numpy/\f2py/\tests/\src/\assumed_shape/\.f2py_f2cmap
+
+  [9] ".git" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git
+
+  [10] ".gitbugtraq" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.gitbugtraq
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.gitbugtraq
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.gitbugtraq
+
+  [11] ".github" — 5 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\jszip@3.10.1/\node_modules/\jszip/\.github
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\jpeg-js@0.4.4/\node_modules/\jpeg-js/\.github
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.github
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.github
+      5. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.github
+
+  [12] ".gitignore" — 10 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.gitignore
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Desktop/\прога/\analyzer/\.gitignore
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.gitignore
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\subprojects/\.gitignore
+      5. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.gitignore
+      ... and 5 more
+
+  [13] ".gitkeep" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\zlibjs@0.3.1/\node_modules/\zlibjs/\bin/\.gitkeep
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\tr46@0.0.3/\node_modules/\tr46/\lib/\.gitkeep
+
+  [14] ".gitmodules" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.gitmodules
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.gitmodules
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.gitmodules
+
+  [15] ".lock" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.codex/\tmp/\arg0/\codex-arg0mxtDqQ/\.lock
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\python/\Lib/\site-packages/\setuptools/\_vendor/\.lock
+
+  [16] ".npmignore" — 4 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\xml@1.0.1/\node_modules/\xml/\.npmignore
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\tr46@0.0.3/\node_modules/\tr46/\.npmignore
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\isarray@1.0.0/\node_modules/\isarray/\.npmignore
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\bmp-js@0.1.0/\node_modules/\bmp-js/\.npmignore
+
+  [17] ".pnpm-workspace-state-v1.json" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm-workspace-state-v1.json
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\@oai+artifact-tool@file+loc_004d9bd7ba94e0f5fe405971ffda5b08/\node_modules/\@oai/\artifact-tool/\node_modules/\.pnpm-workspace-state-v1.json
+
+  [18] ".project" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\SQLiteCpp/\.project
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\SQLiteCpp/\.project
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\SQLiteCpp/\.project
+
+  [19] ".travis.yml" — 11 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\xml@1.0.1/\node_modules/\xml/\.travis.yml
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\string_decoder@1.1.1/\node_modules/\string_decoder/\.travis.yml
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\readable-stream@2.3.8/\node_modules/\readable-stream/\.travis.yml
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\jszip@3.10.1/\node_modules/\jszip/\.travis.yml
+      5. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\.cache/\codex-runtimes/\codex-runtime-install-5fjz6R/\payload/\codex-primary-runtime/\dependencies/\node/\node_modules/\.pnpm/\isarray@1.0.0/\node_modules/\isarray/\.travis.yml
+      ... and 6 more
+
+  [20] ".vscode" — 4 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.vscode
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Desktop/\прога/\analyzer/\.vscode
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.vscode
+      4. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.vscode
+
+  [21] "01c777482144d865e9bd922569498106ac0662" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\cb/\01c777482144d865e9bd922569498106ac0662
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\cb/\01c777482144d865e9bd922569498106ac0662
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\cb/\01c777482144d865e9bd922569498106ac0662
+
+  [22] "03a553ad5514170244bd87b505b1ab0a8312f1" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\eb/\03a553ad5514170244bd87b505b1ab0a8312f1
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\eb/\03a553ad5514170244bd87b505b1ab0a8312f1
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\eb/\03a553ad5514170244bd87b505b1ab0a8312f1
+
+  [23] "0494dd1ed582a867f3fb9f89d7310c4cf5ef52" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\9d/\0494dd1ed582a867f3fb9f89d7310c4cf5ef52
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\9d/\0494dd1ed582a867f3fb9f89d7310c4cf5ef52
+
+  [24] "04ea3ea921ee0d1b5782e9f21e6ad09d9583d3" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\28/\04ea3ea921ee0d1b5782e9f21e6ad09d9583d3
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\28/\04ea3ea921ee0d1b5782e9f21e6ad09d9583d3
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\28/\04ea3ea921ee0d1b5782e9f21e6ad09d9583d3
+
+  [25] "050b7949547cc59823856eaa3942da3e914e3b" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\1f/\050b7949547cc59823856eaa3942da3e914e3b
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\1f/\050b7949547cc59823856eaa3942da3e914e3b
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\1f/\050b7949547cc59823856eaa3942da3e914e3b
+
+  [26] "0533f5a0e6a0babe234b61920f15800e8b77a3" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\ca/\0533f5a0e6a0babe234b61920f15800e8b77a3
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\ca/\0533f5a0e6a0babe234b61920f15800e8b77a3
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\ca/\0533f5a0e6a0babe234b61920f15800e8b77a3
+
+  [27] "0698f216584dfcae3254497c599df84b2cc9d8" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\06/\0698f216584dfcae3254497c599df84b2cc9d8
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\06/\0698f216584dfcae3254497c599df84b2cc9d8
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\06/\0698f216584dfcae3254497c599df84b2cc9d8
+
+  [28] "08b23243ca32e8322a4ce64c8c83e485c1ed53" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\d3/\08b23243ca32e8322a4ce64c8c83e485c1ed53
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\d3/\08b23243ca32e8322a4ce64c8c83e485c1ed53
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\d3/\08b23243ca32e8322a4ce64c8c83e485c1ed53
+
+  [29] "09606d1c720f12249a5e6390ab02f107e73274" — 3 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_03 - SQLiteCpp/\.git/\objects/\09/\09606d1c720f12249a5e6390ab02f107e73274
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\09/\09606d1c720f12249a5e6390ab02f107e73274
+      3. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\09/\09606d1c720f12249a5e6390ab02f107e73274
+
+  [30] "09e840e98362b9aa0ab53b31a25e76cd97a30b" — 2 copies found:
+      1. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_04 - Strategy/\.git/\objects/\4c/\09e840e98362b9aa0ab53b31a25e76cd97a30b
+      2. file:\C:\/\[fc909876-8a74-40ad-816c-74a7e1a52f2b]/\Users/\Егор/\Downloads/\OOP_05 - Template Method/\.git/\objects/\4c/\09e840e98362b9aa0ab53b31a25e76cd97a30b
+
+  Total duplicate groups: 3308
+  (first 30 shown)
+
+----------------------------------------------------------------------
+  3. FILE TYPE STATISTICS
+----------------------------------------------------------------------
+
+  Top file extensions by count:
+
+  +----------------------+------------+----------+
+  | Extension            |    Count   |   Share  |
+  +----------------------+------------+----------+
+  | .py                   | 4144       | 22.6   % |
+  | .pyc                  | 3619       | 19.7   % |
+  | .js                   | 3002       | 16.4   % |
+  | .map                  | 2301       | 12.5   % |
+  | .ts                   | 1132       | 6.2    % |
+  | .h                    | 416        | 2.3    % |
+  | .pyi                  | 321        | 1.7    % |
+  | .tcl                  | 252        | 1.4    % |
+  | .md                   | 234        | 1.3    % |
+  | .json                 | 203        | 1.1    % |
+  | .bcmap                | 168        | 0.9    % |
+  | .svg                  | 162        | 0.9    % |
+  | .msg                  | 145        | 0.8    % |
+  | .txt                  | 132        | 0.7    % |
+  | .pyd                  | 114        | 0.6    % |
+  | .lib                  | 105        | 0.6    % |
+  | .lnk                  | 95         | 0.5    % |
+  | .cpp                  | 81         | 0.4    % |
+  | .enc                  | 80         | 0.4    % |
+  | .cmake                | 78         | 0.4    % |
+  | .wasm                 | 71         | 0.4    % |
+  | .f90                  | 61         | 0.3    % |
+  | .png                  | 59         | 0.3    % |
+  | .make                 | 54         | 0.3    % |
+  | .xbm                  | 50         | 0.3    % |
+  +----------------------+------------+----------+
+
+  Without extension: 5379 (22.7%)
+
+  Total unique extensions: 188
+
+======================================================================
+  Report generated successfully.
+======================================================================
