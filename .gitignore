@@ -1,0 +1,15 @@
+# Скомпилированные файлы
+*.o
+
+# Базы данных
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+
+# Настройки IDE
+.vscode/settings.json
+
+# Системные файлы
+Thumbs.db
+Desktop.ini
